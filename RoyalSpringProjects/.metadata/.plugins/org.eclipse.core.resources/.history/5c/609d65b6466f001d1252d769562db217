@@ -1,0 +1,24 @@
+package com.EmployeeRegister;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+@RequestMapping("/register")
+public class Register_Config {
+@RequestMapping("/form")
+	public String Register(Model model) {
+		EmployeeDetails emp=new EmployeeDetails();
+		model.addAttribute("reg", new EmployeeDetails());
+		return "register";
+	}
+@RequestMapping("/submitForm")  
+public String submitForm(@ModelAttribute("reg") EmployeeDetails res)  
+{  
+    return "confirmation-form";  
+} 
+}

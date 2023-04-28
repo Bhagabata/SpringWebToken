@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Dec 04 16:28:41 IST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Asus\\.m2\\repository\\org\\springframework\\spring-web\\5.3.22\\spring-web-5.3.22.jar=WEB-INF/lib/spring-web-5.3.22.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Asus\\.m2\\repository\\org\\springframework\\spring-web\\5.3.22\\spring-web-5.3.22.jar=WEB-INF/lib/spring-web-5.3.22.jar

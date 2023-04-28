@@ -1,0 +1,43 @@
+/*Banking system shared resources like performing different operations like withdraw(),deposit(),Enquire() when ever we want to perform these operations at same time on same account causes data inconsistency and deadlock situations.
+
+Provide solution with multithreaded program which will avoid deadlock situations.
+*/
+
+
+package AssesmentsPrblms;
+
+
+class Banking extends Thread{
+	
+	public int deposit(int amount) {
+		System.out.println("Deposited Succesfully "+amount);
+	      return amount;
+	}
+	public int withdraw(int amount) {
+		System.out.println("widdrwan sucessfully "+amount);
+	      return amount;
+	}
+	public String Enquire(String enquiry) {
+		System.out.println("Enquiry cleared !!!!"+enquiry);
+	      return enquiry;
+	}
+	
+	
+}
+
+public class MultiThreading {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+   Banking ob=new Banking();
+   ob.start();
+   ob.deposit(1500);
+   Thread.sleep(1000);
+   ob.withdraw(500);
+   Thread.sleep(2000);
+   ob.Enquire("")
+   
+   
+	}
+
+}

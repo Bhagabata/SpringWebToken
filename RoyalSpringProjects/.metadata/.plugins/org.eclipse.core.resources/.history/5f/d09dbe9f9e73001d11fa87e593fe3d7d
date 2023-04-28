@@ -1,0 +1,36 @@
+package com.springAss.control;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springAss.dao.ContentsDaoImpl;
+import com.springAss.model.Contents;
+
+
+@RestController
+public class ContentsController {
+	
+	@Autowired
+private ContentsDaoImpl cont;
+	
+	@GetMapping("/content")
+	public List<Contents>getContent(){
+		return cont.list();
+	}
+public ResponseEntity<?>getContent(@PathVariable("id")int id){
+	Contents con=cont.get(id);
+	if(cont==null) {
+		return new ResponseEntity<String>("No Contents Found",HttpStatus.NOT_FOUND);
+		
+	}
+	return new ResponseEntity<Contents>(cont,HttpStatus.OK);
+}
+
+}
+

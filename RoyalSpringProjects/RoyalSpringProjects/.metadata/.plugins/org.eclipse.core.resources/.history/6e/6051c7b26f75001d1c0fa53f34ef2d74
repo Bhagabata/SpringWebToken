@@ -1,0 +1,5 @@
+package com.example.demoSpringBoot.bean;
+
+public class Tutorial {
+
+}

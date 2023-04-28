@@ -1,0 +1,7 @@
+package com.royalnavghan.royalCustom;
+
+public class CustomerCrud {
+public static void main(String[] args) {
+	Customer_Services custom=new CustomerServiceImplement();
+}
+}

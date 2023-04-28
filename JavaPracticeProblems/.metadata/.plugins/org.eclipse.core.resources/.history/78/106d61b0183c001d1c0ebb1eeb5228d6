@@ -1,0 +1,20 @@
+package day5;
+public interface Printable {
+	
+void print();
+
+}
+class abc implements Printable {
+	public void print()
+	
+{System.out.println("Hello");
+	}
+public class Printables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		abc obj = new abc();
+		obj.print();
+	}
+
+}}

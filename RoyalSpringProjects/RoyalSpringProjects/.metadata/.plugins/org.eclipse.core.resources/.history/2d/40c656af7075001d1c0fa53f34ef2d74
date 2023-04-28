@@ -1,0 +1,7 @@
+package com.example.demoSpringBoot.Jpa;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TutorialJPA extends JpaRepository<T, ID> {
+
+}

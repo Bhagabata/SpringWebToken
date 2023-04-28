@@ -1,0 +1,30 @@
+package com.royal.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.royal.bean.Products;
+import com.royal.service.ProductServices;
+
+@RestController
+public class ProductController {
+
+	ProductServices product;
+	
+	
+	public List get() {
+	return product.finalAll();
+	}
+	
+	public Products find(@PathVariable int id) {
+		return product.find(id);
+	}
+	public void addProduct(@RequestBody Products prod) {
+		
+		product.addProduct(prod);
+	}
+}

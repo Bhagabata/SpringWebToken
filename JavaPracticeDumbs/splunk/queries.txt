@@ -1,0 +1,25 @@
+1. do we get hands on SSL certificate part?
+2. If any one of the forwarders is down, then how do we fix it
+3. how to push updates from deployment server to forwarders?
+4. How to set/enable SSL from forwardrs to indexers?
+5. how to extend the size of mount server? if its full?
+Can we do by ourself?
+
+How to decide how much we need searhc head and indexer?
+  if you wanna store more data but less serach then u need more indexer and less
+search head.
+If ou have lesser data and more search ,then u need more SH than indexer.
+
+If index queue is increasesm then we shd go for indexer additon
+
+with saurabh:
+
+How to monitor mount folder?
+How to increase space?
+
+To do so in linux,
+fdisk -l
+fdisk command to format
+to attach volume, lvcreate etc..
+
+Ask Suresh to share those

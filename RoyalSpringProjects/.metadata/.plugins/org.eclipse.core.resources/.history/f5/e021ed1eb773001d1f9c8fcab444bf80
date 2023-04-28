@@ -1,0 +1,21 @@
+package validation;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+
+public class Validation {
+	@NotBlank(message = "E-mail is Required")
+	private String Email;
+	
+	@NotBlank(message = "Age Should between 18 to 60 ")
+	@Size(message = "Minimum 10 chars in the name")
+	private int Age;
+	@NotBlank(message = "Password should be minimum of 8 and maximum of 15 character")
+	@Pattern(regexp = "^[1-9][0-9]{6}$", message = "address code is not valid")
+	private String Password;
+	
+	@Pattern(regexp = "[`~,.<>;':\"/[\\/]|{}()=_+-]", message = "Address code should not contain special characters")
+	private String ConfrmPassword;
+	
+}

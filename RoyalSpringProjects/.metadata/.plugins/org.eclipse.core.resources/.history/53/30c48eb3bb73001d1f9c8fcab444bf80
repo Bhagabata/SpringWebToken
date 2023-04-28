@@ -1,0 +1,29 @@
+package validation;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import jakarta.validation.Valid;
+
+@Controller
+public class ValidController {
+	@RequestMapping( "/" )
+	public String getData(Model m) {
+		m.addAttribute("cust", new Validations());
+		return "/WEB-INF/Register.jsp";
+	}
+	
+	@RequestMapping( "/validate" )
+	public String validateCust(@Valid @ModelAttribute("cust") Validations c, BindingResult br) {
+		if(br.hasErrors()) {
+			return "/WEB-INF/Register.jsp"; 
+		} else {
+			return "/WEB-INF/Confirm.jsp";			
+		}
+
+	}
+}

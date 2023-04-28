@@ -1,0 +1,28 @@
+ 
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Hello here is your details</p>  
+ Name : ${reg.Name} <br>  
+ Salary : ${reg.salary} <br>  
+ Designation: ${reg.Designation}<br> 
+<table>
+	<c:forEach var="emp" items="${rs.rows}">
+		<tr>
+			<td><c:out value="${emp.id}"></c:out></td>
+			<td><c:out value="${emp.name}"></c:out></td>
+			<td><c:out value="${emp.desg}"></c:out></td>
+			<td>
+                    </td>
+                </tr>
+          </c:forEach>
+	 </table>
+</body>
+</html>

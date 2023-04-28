@@ -1,0 +1,311 @@
+collection
+ 
+ ArrayList
+it is in java.util.ArrayList;
+normal array is not resizable it is fixed size and it is collectionn of similar datatype
+Resizable-array implementation of the List interface. Implements all optional list operations, and permits all elements, including null. In addition to implementing the List interface, this class provides methods to manipulate the size of the array that is used internally to store the list. 
+ 
+
+ArrayList()-Constructs an empty list with an initial capacity of ten.
+ArrayList(Collection<? extends E> c)
+Constructs a list containing the elements of the specified collection, in the order they are returned by the collection's iterator.
+ArrayList(int initialCapacity)
+Constructs an empty list with the specified initial capacity.
+
+
+Modifier and Type	Method and Description
+boolean	add(E e)
+Appends the specified element to the end of this list.
+int	size()
+Returns the number of elements in this list.
+void	add(int index, E element)
+Inserts the specified element at the specified position in this list.
+boolean	addAll(Collection<? extends E> c)
+Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's Iterator.
+boolean	addAll(int index, Collection<? extends E> c)
+Inserts all of the elements in the specified collection into this list, starting at the specified position.
+void	clear()
+Removes all of the elements from this list.
+boolean	contains(Object o)
+Returns true if this list contains the specified element.
+E	remove(int index)
+Removes the element at the specified position in this list.
+boolean	remove(Object o)
+Removes the first occurrence of the specified element from this list, if it is present.
+E	get(int index) 
+Returns the element at the specified position in this list
+boolean	isEmpty()
+Returns true if this list contains no elements.
+E	set(int index, E element)
+Replaces the element at the specified position in this list with the specified element.
+int	indexOf(Object o)
+Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+List<E>	subList(int fromIndex, int toIndex)
+Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+
+
+
+
+what is the diff b/w get() and  remove() ?(Important)
+get is also return the element and will not from array list
+remove also return the elemnet and it will removw from array list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arraylist 
+it is re-sizable array
+array list syantax
+List<variable>name=new ArrayList<Integer>();
+
+
+List
+
+COLLECTIONS FRAMEWORK
+Collections Framework is a unified architecture for
+managing collections
+Main Parts of Collections Framework
+1. Interfaces
+Core interfaces defining common functionality exhibited by collections
+1. Implementations
+• Concrete classes of the core interfaces providing data structures
+1. Operations
+Methods that perform various operations on collections
+
+
+
+WHAT IS A COLLECTION?
+	•	﻿﻿A Collection (also known as container) is an obiect that contains a group of objects treated as a single unit.
+	•	﻿﻿Any type of objects can be stored, retrieved and manipulated as elements of collections.
+
+
+
+
+CONTENTS
+o What is Collection?
+	•	﻿﻿Collections Framework o Collections Hierarchy o Collections Implementations
+	•	﻿﻿Set
+	•	﻿﻿List
+	•	﻿﻿Map
+
+
+
+
+COLLECTION
+FRAMEWORK
+The collections framework is a unified architecture for representing and manipulating collections, enabling them to be manipulated independently of the details of their representation. It reduces programming effort while increasing performance. It enables interoperability among unrelated APIs, reduces effort in designing and learning new APIs, and fosters software reuse. The framework is based on more than a dozen collection interfaces. It includes implementations of these interfaces and algorithms to manipulate them.
+
+
+
+
+
+
+
+LIST IMPLEMENTATIONS
+1.Insertion Order is maintained
+2.Duplicate elements are allowed.
+
+
+
+LINKED LIST
+java.util.LinkedList;
+Liked list is data retreival is slower and element insertion/deletion is faster
+LinkedList link = new LinkedList ( ); - is a syntax. 
+
+
+void	addFirst(E e)
+Inserts the specified element at the beginning of this list.
+void	addLast(E e)
+Appends the specified element to the end of this list.
+void	clear()
+Removes all of the elements from this list.
+E	get(int index)
+Returns the element at the specified position in this list.
+E	getFirst()
+Returns the first element in this list.
+E	getLast()
+Returns the last element in this list.
+boolean	offerFirst(E e)
+Inserts the specified element at the front of this list.
+boolean	offerLast(E e)
+Inserts the specified element at the end of this list.
+E	poll()
+Retrieves and removes the head (first element) of this list.
+E	pollFirst()
+Retrieves and removes the first element of this list, or returns null if this list is empty.
+E	pollLast()
+Retrieves and removes the last element of this list, or returns null if this list is empty.
+E	removeFirst()
+Removes and returns the first element from this list.
+E	removeLast()
+Removes and returns the last element from this list.
+boolean	offer(E e)
+Adds the specified element as the tail (last element) of this list.
+boolean	offerFirst(E e)
+Inserts the specified element at the front of this list.
+boolean	offerLast(E e)
+Inserts the specified element at the end of this list.
+
+
+
+
+
+
+
+
+
+
+Linked list 
+import java.util.LinkedList;
+public class MyLinkedList {
+public static void main (String args[ ]) {
+LinkedList link = new LinkedList ( );
+link.add(new Double (2.0));
+link.addLast(new Double (3.0)); link.addFirst(new Double (1.0));
+Object array[ ] = link.toArray ( );
+for (int x=0; x<3; ×++) {
+System.out.printin (array [x]);
+}}}
+
+
+
+
+
+LIST IMPLEMENTATIONS'
+
+VECTOR
+
+import java.util.Vector;
+public class MyVector {
+public static void main (String args[ ]) {
+Vector vecky = new Vector ( );
+vecky.add (new Integer (1)); vecky.add (new Integer (2)); vecky. add (new Integer (3)) ;
+for (int x=0; x<3; x++) {
+System.out.printin (vecky.get (x));
+}}}
+
+
+
+
+
+LIST IMPLEMENTATIONS
+ARRAY LIST
+import java.util.ArrayList;
+public class MyArrayList {
+public static void main (String args[ ]) {
+ArrayList alist = new ArrayList ( );
+alist.add(new String ("One")); alist.add(new String ("Two"));
+alist.add(new String ("Three"));
+System.out.println(alist.get (0));
+System.out.println(alist.get (1));
+System.out.println(alist.get (2));
+}}
+
+Vector List
+vector list is same as arraylist it isndynamic array we can increase the size of array.
+Vector v-new Vector(); this is normal
+Vector<Integer>v=new Vector<Integer>(); this is generic.
+it will increase automatically.
+it is increase the array size by 100%
+vector is came from jdk 1 its been very old. introduced itself.
+when to use vector and when to use ArrayList?
+Its a both are implementation of the list.
+In array list increase the capacity by 50% only.
+it will help to manage/save some memory on other side waste more memory.
+It is syncronized 
+threadsafe but not practically.
+arraylist is not threadsafe.
+vector is slow
+arraylist is fast.
+when you work with array na we can choose arrayList otherwise we can use vector.
+
+
+
+
+
+boolean	add(E e)
+Appends the specified element to the end of this list (optional operation).
+void	add(int index, E element)
+Inserts the specified element at the specified position in this list (optional operation).
+boolean	addAll(int index, Collection<? extends E> c)
+Inserts all of the elements in the specified collection into this list at the specified position (optional operation).
+void	clear()
+Removes all of the elements from this list (optional operation).
+boolean	equals(Object o)
+Compares the specified object with this list for equality.
+abstract E	get(int index)
+Returns the element at the specified position in this list.
+int	hashCode()
+Returns the hash code value for this list.
+int	indexOf(Object o)
+Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+Iterator<E>	iterator()
+Returns an iterator over the elements in this list in proper sequence.
+int	lastIndexOf(Object o)
+Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+
+
+Stack:
+iIt is the internally uses a dynamic array(ArrayList) or LinkedList for its Implementation.
+1.Stack implementation using ArrayList.
+2.Stack implementation using LinkedList.
+3.Is ts also having from jdk1.
+
+Last in find out.
+Methods of stack 
+push()-to insert
+pop()-last data remove
+peek()-to look recent/last data
+isEmpty() empty everything
+
+
+
+Application of stack:
+expression evaluation.((a+b)+c)*d
+functional calls.({function banground handled by stack in java})
+delimeter checking.({(.....)syantax error find out using stack by java}
+reversing a data.
+
+Stack is a object
+Stack nums=new Stack();
+nums.push(15);
+nums.pop(2);
+nums.peek(1);
+
+
+
+boolean	empty()
+Tests if this stack is empty.
+E	peek()
+Looks at the object at the top of this stack without removing it from the stack.
+E	pop()
+Removes the object at the top of this stack and returns that object as the value of this function.
+E	push(E item)
+Pushes an item onto the top of this stack.
+int	search(Object o)
+Returns the 1-based position where an object is on this stack.
+
+
+

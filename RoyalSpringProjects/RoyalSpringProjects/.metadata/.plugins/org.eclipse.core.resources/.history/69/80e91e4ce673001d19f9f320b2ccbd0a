@@ -1,0 +1,10 @@
+package com.example.demoSpringBoot;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class home {
+public void home() {
+	System.out.println("hi hello from spring boot ");
+}
+}

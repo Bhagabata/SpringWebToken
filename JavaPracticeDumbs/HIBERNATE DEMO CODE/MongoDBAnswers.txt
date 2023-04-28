@@ -1,0 +1,75 @@
+
+USING ABOVE DATA PERFORM  CRUD OPERATIONS FOR THE BELOW.
+
+1.FIND EMPLOYEE WHO ARE BELONG TO DEPT NUMBER GREATER THAN 30.
+2.List all employees
+
+db.EMPLOYEES.find()
+
+
+3.Find all employees whose name is 'Steve'
+
+db.EMPLOYEES.find({ name:"Steve"})
+
+
+4.Find all employees whose age is greater than 40
+
+db.EMPLOYEES.find({"age":{$gtt:[40]}}
+
+
+5.Find and update the employee whose name is "Bob" and change his privileges to "user".
+
+db.EMPLOYEES.updateOne({name:"Bob"},{$set:{privileges :"user"}})
+
+==================================
+II)
+
+create collection myemployees
+
+add data using beow metadata
+
+empid,name,salary,deptid
+
+
+
+db.myEmployee.insertMany([{"empid":26},{"name":"srihari"},{"salary":2500},{"deptid":"IT"},{"empid":25},
+{"name":"praveen"},{"salary":25000},{"deptid":"manager"},
+{"empid":56},{"name":"raja"},{"salary":26000},{"deptid":"HR"},
+{"empid":65},{"name":"nikhil"},{"salary":25644},{"deptid":"Admin"},
+{"empid":36},{"name":"sri"},{"salary":25005},{"deptid":"Dev"},{"empid":65},
+{"name":"hari"},{"salary":24500},{"deptid":"Asst-manager"},
+{"empid":25},{"name":"sriharivishnu"},{"salary":25000},{"deptid":"manager"},
+{"empid":25},{"name":"sriharivishnu"},{"salary":25000},{"deptid":"manager"},
+])
+
+
+perform below aggreations
+
+1.find the highest and lowest salary in each department
+
+db.myEmployee.aggregate([
+  { $group:
+    { dept: "$deptid",
+      maxSalary: { $max: "$salary" }
+    }
+  }
+])
+
+
+
+2.find the avergae salary department wise
+
+
+db.myEmployee.aggregate([
+  { $group:
+    { "_id": "$deptid",
+       avg: {$avg: "$salary"}
+    }
+  }
+])
+
+3.filter data based on salary less than 10000 and increment their salry to 10%
+
+db.myEmployee.updateMany({ 'salary':{$lt :26000}},
+{$set:{'salary':'$salary'+('$salary'*0.1)}});
+

@@ -1,0 +1,12 @@
+package com.example.demoSpringBoot.Bean;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "PASSPORT_DETAILS")
+public class Passport {
+int STDID;
+String STD_NAME;
+String Passport_Number;
+}

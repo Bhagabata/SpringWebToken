@@ -1,0 +1,18 @@
+package com.royal.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.royal.service.ProductServices;
+
+@RestController
+public class ProductController {
+
+	ProductServices product;
+	
+	
+	public List get() {
+	product.finalAll();
+	}
+	
+	
+}

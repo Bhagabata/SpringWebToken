@@ -1,0 +1,31 @@
+package com.royalnavghan.royalArtifacts;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class StudentFramework {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+StudentDetails obj=new StudentDetails();
+obj.setStudentId(105);
+obj.setStudentName("vishnu");
+obj.setDepartment("Spring");
+
+Configuration con=new Configuration()
+.configure()
+.addAnnotatedClass(StudentDetails.class);
+
+SessionFactory sr=con.buildSessionFactory();
+
+Session session=sr.openSession();
+Transaction tx=session.beginTransaction();
+session.save(obj);
+tx.commit();
+
+	}
+
+}

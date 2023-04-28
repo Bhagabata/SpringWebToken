@@ -1,0 +1,37 @@
+package com.example.demoSpringBoot.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demoSpringBoot.bean.Tutorial;
+import com.example.demoSpringBoot.service.TutorialServices;
+
+@RestController
+public class TutorialConroller {
+	@Autowired
+	TutorialServices tutoo;
+	
+	public List<Tutorial>get(){
+		return tutoo.get();
+	}
+	public Tutorial getById(@PathVariable int id) {
+		return tutoo.getById(id);
+	}
+	
+	public Tutorial create(@RequestBody Tutorial tuto) {
+		return tutoo.add(tuto);
+	}
+	
+	public Tutorial update(@RequestBody Tutorial tuto) {
+		return tutoo.update(tuto);
+	}
+	
+	public String delete(int id) {
+		tutoo.delete(id);
+		return id+" deleted successfully";
+	}
+}

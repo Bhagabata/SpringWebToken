@@ -1,0 +1,17 @@
+Build a java Program to 
+
+1.loop a linked list in reverse order.
+2.add the specified element at the front of a linked list.
+3. add the specified element at the end of a linked list
+4.retreive  the first and last occurrence of the specified elements in a linked list.
+5.delete a specified element from a linked list.
+6. delete first and last element from a linked list.
+7.swap two elements in a linked list.
+8.shuffle the elements in a linked list
+9.join two linked lists
+10.delete and return the first element of a linked list.
+11. retrieve but does not delete, the first element of a linked list. 
+12. retrieve but does not delete, the last element of a linked list. 
+13. convert a linked list to array list.
+14.compare two linked lists
+15.test an linked list is empty or not

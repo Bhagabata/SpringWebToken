@@ -1,0 +1,24 @@
+/*Banking system shared resources like performing different operations like withdraw(),deposit(),Enquire() when ever we want to perform these operations at same time on same account causes data inconsistency and deadlock situations.
+
+Provide solution with multithreaded program which will avoid deadlock situations.
+*/
+
+
+package AssesmentsPrblms;
+
+
+class Bankking{
+	
+	public int deposit(int amount) {
+	      return amount;
+	}
+}
+
+public class MultiThreading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

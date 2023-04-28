@@ -1,0 +1,32 @@
+package StreamAPI;
+
+import java.util.*;    
+class Product4{    
+    int id;    
+    String name;    
+    float price;    
+    public Product4(int id, String name, float price) {    
+        this.id = id;    
+        this.name = name;    
+        this.price = price;    
+    }    
+}    
+public class Prblm4 {    
+    public static void main(String[] args) {    
+        List<Product4> productsList = new ArrayList<Product4>();    
+        //Adding Products    
+        productsList.add(new Product4(1,"HP Laptop",25000f));    
+        productsList.add(new Product4(2,"Dell Laptop",30000f));    
+        productsList.add(new Product4(3,"Lenevo Laptop",28000f));    
+        productsList.add(new Product4(4,"Sony Laptop",28000f));    
+        productsList.add(new Product4(5,"Apple Laptop",90000f));    
+        // max() method to get max Product price     
+        Product4 productA = productsList.stream().max((product1, product2)->product1.price > product2.price ? 1: 0).get();    
+        System.out.println(productA.price);    
+        // min() method to get min Product price    
+        Product4 productB = productsList.stream().min((product1, product2)->product1.price > product2.price ? 1: 0).get();    
+        System.out.println(productB.price);    
+            
+    }    
+}    
+

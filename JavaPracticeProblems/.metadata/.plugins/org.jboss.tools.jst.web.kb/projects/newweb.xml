@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/jaspic-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/servlet-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/Users/Asus/Desktop/Practice/newweb/src/main/webapp/WEB-INF/lib/mysql-connector-j-8.0.31.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-zh-CN.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-util.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-cs.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/catalina.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/catalina-tribes.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-ko.jar"/>
+  <path value="C:/Users/Asus/Desktop/Practice/newweb/src/main/webapp/WEB-INF/lib/jstl-standard.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/c-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/c.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/fmt-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/fmt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/permittedtaglibs.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/scriptfree.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/sql-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/sql.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/x-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-standard.jar/meta-inf/x.tld" project="newweb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/catalina-ha.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/jasper.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/jakartaee-migration-1.0.4-shaded.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-jdbc.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-ru.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-dbcp.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-jni.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-util-scan.jar"/>
+  <path value="C:/Users/Asus/Desktop/Practice/newweb/src/main/webapp/WEB-INF/lib/jstl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fn.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/permittedtaglibs.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/scriptfree.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0-rt.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0.tld" project="newweb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x.tld" project="newweb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/jsp-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/websocket-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/catalina-ssi.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-pt-BR.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/el-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-i18n-de.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/catalina-ant.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/jasper-el.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/annotations-api.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/catalina-storeconfig.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-coyote.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/ecj-4.20.jar"/>
+  <path value="C:/Users/Asus/Desktop/apache-tomcat-10.0.27/apache-tomcat-10.0.27/lib/tomcat-websocket.jar"/>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="17" name="%0" offset="429" path="%1"/>
+   <linked-el length="20" name="%2" offset="575" path="%3"/>
+   <linked-el length="17" name="%4" offset="429" path="%1"/>
+   <linked-el length="20" name="%5" offset="647" path="%3"/>
+   <linked-el length="20" name="%5" offset="437" path="%3"/>
+   <linked-el length="25" name="%5" offset="705" path="%3"/>
+   <linked-el length="11" name="%6" offset="525" path="%3"/>
+   <linked-el length="18" name="%7" offset="556" path="%3"/>
+   <linked-el length="20" name="%7" offset="575" path="%3"/>
+   <linked-el length="10" name="%8" offset="375" path="%3"/>
+   <linked-el length="18" name="%9" offset="556" path="%3"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="str" value="%0"/>
+  <alias path="headerValue.value" value="%2"/>
+  <alias path="fn" value="%4"/>
+  <alias path="dummyName" value="%5"/>
+  <alias path="header" value="%6"/>
+  <alias path="headerValue" value="%7"/>
+  <alias path="/newweb/src/main/webapp/NewFile.jsp" value="%3"/>
+  <alias path="/newweb/src/main/webapp/FunctionTags.jsp" value="%1"/>
+  <alias path="hello" value="%8"/>
+  <alias path="headerValue.key" value="%9"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsp/jstl/functions">
+   <prefix>fn</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+   <prefix>fn</prefix>
+  </uri>
+ </uris>
+</kb-project>

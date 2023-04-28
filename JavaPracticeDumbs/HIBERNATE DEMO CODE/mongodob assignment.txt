@@ -1,0 +1,37 @@
+I)
+
+CREATE COLLECTION MYDB AND DOCUMENT WITH NAME  EMPLOYEES
+
+UNDER EMPLOYEES INSERT DATA WITH KEY VALUE PAIRS FOR THE BELOW METADATA
+
+EMPID,age,privileges,favorites,finished,badges,points
+
+hint: use the employees.json file for loadig data.
+
+
+INSERT AT LEAST 10 ...
+
+USING ABOVE DATA PERFORM  CRUD OPERATIONS FOR THE BELOW.
+
+1.FIND EMPLOYEE WHO ARE BELONG TO DEPT NUMBER GREATER THAN 30.
+2.List all employees
+3.Find all employees whose name is 'Steve'
+4.Find all employees whose age is greater than 40
+5.Find and update the employee whose name is "Bob" and change his privileges to "user".
+
+==================================
+II)
+
+create collection myemployees
+
+add data using beow metadata
+
+empid,name,salary,deptid
+
+
+perform below aggreations
+
+1.find the highest and lowest salary in each department
+2.find the avergae salary department wise
+3.filter data based on salary less than 10000 and increment their salry to 10%
+

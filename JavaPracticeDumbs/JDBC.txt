@@ -1,0 +1,77 @@
+
+
+JDBC program from basics to complex
+
+1) Write a java program that establishes a connection to oracle database successfully.If the connection is successful, it should display a message “Connection Establishedsuccessfully”. In case, it is not able to do so due to any exception, it shoulddisplay the message “Connection could  not be established “. If there is anexception, it should also display the description of the exception.
+
+2) In the just concluded exercise, where you have established the connection successfully, exclude the registration process(by commenting the line
+containing the code Class.forName(“..”)). Observe the result.
+
+3) Write a java program that connects to oracle database, queries the inbuilt	
+table “emp” and displays the first two columns (empno using column index
+and Empname using column name ) of all the rows.
+
+4)Display Student details Write the code to display details of all the students, if no roll no. is passed, while executing the main program.If while executing the main program, the roll no. is passed, then it should display the record of that particular student.
+
+5)Inserting a record
+ABC International School wants to computerize for 20 students details. 
+The school maintains a database of students in Oracle. 
+The student table contains information related to students and is shown 
+in the following student table structure. 
+Column Name Types
+Rollno Number (4) 
+StudentName Varchar (20)  
+Standard Varchar (2) 
+Date_Of_Birth Date 
+Fees Number (9,2) 
+           
+ When a new student joins the school, the student record is inserted in 
+ the student table.  The valid student details are as follows:
+ 
+• Rollno: Valid value is a 4-digit number 
+• StudentName: Valid value can contain maximum 20 letters in uppercase
+• Standard : Valid values are Roman Letters representing I to X(I, II, III, IV….IX, X)
+Write a Java program to insert some records to the table
+CREATE TABLE is to be Rollno Number (4) StudentName Varchar (20) Standard Varchar (2) Date_Of_Birth DateFees Number (9,2)
+sample input:
+INSERT INTO stdnt VALUES(1002, 'ALICE', 'V', '16-Aug-1947', 4300.0); using jdbc fetching all records
+ 
+6) 
+Create a stored procedure that calculates net salary of all the employees 
+whose records are stored in table "emp". the tables contains  empno empname empsalary empcommision
+The criteria for calculating net salary is as follows :
+Gross salary = sal + comm.
+Net Salary = gross salary - IT
+If the employee's commission is null then IT is calculated as
+IT =  10% of gross salary
+else if the employees commission is less than 500, then IT is calculated as
+IT =  15% of gross salary
+else
+IT = 20% of gross salary.
+Develop a jdbc program that invokes this stored procedure by passing the empno. 
+and in return gets the net salary of each employee. Display on screen 
+the empno., ename and net salary of all the employees.
+ 
+
+7)Modification of Student record 
+When there is a change in the fee to be paid by a student, the respective row 
+should be appropriately updated. Pass the rollno from the command prompt along 
+with the new fee amount and this amount should be reflected in the table for 
+that particular student.
+
+
+8) Deleting a Student’s record
+When a student leaves the school, the record related to that student needs 
+to be deleted from the Student table. The student’s roll no, whose record 
+has to be deleted, should be passed as a command line argument.
+Upon deletion, the Student details must be stored in another table named 
+StudentLog which will maintain the details such as Rollno, StudentName, 
+Standard and Leaving_date.
+CREATE TABLE of  stdnt log Rollno Number (4) StudentName Varchar (20) Standard Varchar (2) Date_Of_Birth Date Fees Number (9,2).
+
+
+
+
+
+
+

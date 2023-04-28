@@ -1,0 +1,26 @@
+package com.royalnavghan.royalCustom;
+
+public class CustomerCrud {
+public static void main(String[] args) {
+	Customer_Services custom=new CustomerServiceImplement();
+	
+	createCustomer(custom);
+	getCustomer(custom);
+	updateCustomer(custom);
+	deleteCustomer(custom);
+}
+void deleteCustomer(Customer_Services custom) {
+	custom.deleteCustomer(2);
+}
+void updateCustomer(Customer_Services custom) {
+	custom.updateCustomer(4, "India");;
+}
+void getCustomer(Customer_Services custom) {
+	Customer cus=custom.getCustomer(2);
+	System.out.println(cus);
+}
+void deleteCustomer(Customer_Services custom) {
+	custom.deleteCustomer(2);
+}
+
+}

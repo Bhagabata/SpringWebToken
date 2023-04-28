@@ -1,0 +1,29 @@
+what is collection
+what is framework
+why framework ?
+collection contains(list map set)
+what is list?
+why list used?
+types of lists
+ArrayList
+ArrayList Methods
+ArrayList Examples
+LinkedList
+LiknedList Methods
+LinkedList Examples
+different B/w ArrayList and Linked list
+VectorList
+Vector Methods
+Vector Examples
+different B/w Vector and Arraylist
+Stack implementation
+Methods.
+Examples
+abstractList
+Methods
+AbstractSEquentialList
+methods
+
+
+
+

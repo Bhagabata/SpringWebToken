@@ -1,0 +1,13 @@
+package com.royalnavghan.royalArtifacts;
+
+public class StudentFramework {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+StudentDetails obj=new StudentDetails();
+obj.setStudentId(101);
+obj.setStudentName("srihari");
+obj.setDepartment("Computer Science");
+	}
+
+}

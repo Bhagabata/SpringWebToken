@@ -1,0 +1,52 @@
+package com.springAss.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.springAss.model.Contents;
+@Component
+public class ContentsDaoImpl implements ContentDao {
+	
+	private static List<Contents>details;
+	{
+		details =new ArrayList<Contents>();
+		details.add(new Contents(01,"Java","Full Stack","20/07/2003"));
+		details.add(new Contents(02,"World","Adventures","27/06/2019"));
+		details.add(new Contents(03,"Earth","Human-Life","15/02/2022"));
+		details.add(new Contents(04,"Programming","Python FullStack","20/01/2022"));
+		details.add(new Contents(05,"HelloWorld","C,C++","08/09/2013"));
+	}
+
+	@Override
+	public void save(Contents content) {
+		// TODO Auto-generated method stub
+int oldId=0;
+if(content!=null && content.getId()>0) {
+	oldId=content.getId();
+	Contents con=get(oldId);
+	details.remove(con);
+}content.setId(oldId);
+details.add(content);
+	}
+
+	@Override
+	public Contents get(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Contents> list() {
+		// TODO Auto-generated method stub
+		return details;
+	}
+
+}

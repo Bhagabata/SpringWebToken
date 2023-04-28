@@ -1,0 +1,8 @@
+package com.springAss.model;
+
+public class Contents {
+private int id;
+private String title;
+private String content;
+private String createdDate;
+}

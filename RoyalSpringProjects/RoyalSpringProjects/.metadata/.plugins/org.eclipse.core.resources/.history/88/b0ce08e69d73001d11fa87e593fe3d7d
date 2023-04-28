@@ -1,0 +1,21 @@
+package com.springAss.control;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springAss.dao.ContentsDaoImpl;
+
+
+@RestController
+public class ContentsController {
+	
+	@Autowired
+private ContentsDaoImpl cont;
+	
+	
+	public List<Contents>getContent(){
+		return cont.list();
+	}
+}

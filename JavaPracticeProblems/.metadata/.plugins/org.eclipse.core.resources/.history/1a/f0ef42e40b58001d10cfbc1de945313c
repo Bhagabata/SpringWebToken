@@ -1,0 +1,9 @@
+package com.royalnavghan.royalCustom;
+
+public interface CustomerDAO {
+	public abstract void addCustomer(Customer customer);
+	public abstract void fetchCustomer(int customerId);
+	public abstract void updateCustomer(int customerId,String newLocation);
+	public abstract void deleteCustomer(Integer customerId);
+
+}

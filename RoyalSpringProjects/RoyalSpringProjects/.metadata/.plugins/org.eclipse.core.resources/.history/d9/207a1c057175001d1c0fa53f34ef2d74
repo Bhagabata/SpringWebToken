@@ -1,0 +1,13 @@
+package com.example.demoSpringBoot.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demoSpringBoot.bean.Tutorial;
+
+@Service
+public class TutorialServices {
+
+	@Autowired
+	Tutorial tuto;
+}

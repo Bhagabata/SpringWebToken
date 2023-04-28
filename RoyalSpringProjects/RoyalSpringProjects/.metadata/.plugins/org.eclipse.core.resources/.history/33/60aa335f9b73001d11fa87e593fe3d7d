@@ -1,0 +1,39 @@
+package com.springAss.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.springAss.model.Contents;
+
+public class ContentsDaoImpl implements ContentDao {
+	
+	private static List<Contents>details();
+	{
+		ArrayList<Contents>details =new ArrayList<Contents>();
+	}
+
+	@Override
+	public void save(Contents content) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Contents get(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Contents> list() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

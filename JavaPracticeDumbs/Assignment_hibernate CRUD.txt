@@ -1,0 +1,20 @@
+I)
+
+Implement crud operations for the below to Create ,Fetch, Update ad delete the entity information using service and DAO Implemetations.
+
+Customers 
+
+ Cust_Id,Cust_Name,Location
+
+Using Dynamic Update annotation.
+
+========================================
+II)
+
+Implement crud operations for salesperson information with out using service and DAO impl
+
+create salesperson entity to declre spid,spname,spemail and repective getter and setter methods.
+
+Create separate classes to implement for each crud operation.
+
+ 

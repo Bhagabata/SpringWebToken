@@ -1,0 +1,23 @@
+package springMvcConfig;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@Configuration
+@ComponentScan(basePackages = "springMvcConfig")
+public class ViewResolver {
+
+	
+	
+	
+public InternalResourceViewResolver view() {
+	
+	InternalResourceViewResolver view=new InternalResourceViewResolver();
+	
+	view.setPrefix("/WEB-INF/");
+	view.setSuffix(".jsp");
+	
+	return view;
+}
+}

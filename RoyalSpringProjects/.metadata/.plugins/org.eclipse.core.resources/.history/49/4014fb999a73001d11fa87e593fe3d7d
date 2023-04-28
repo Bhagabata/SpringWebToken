@@ -1,0 +1,11 @@
+package com.springAss.dao;
+
+import com.springAss.model.Contents;
+
+public interface ContentDao {
+public void add(int id);
+public Contents content();
+public void get(int id);
+public void delete(int id);
+
+}

@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jstl/sql" prefix="sql"%>
+    <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/sql"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SQl tags</title>
+</head>
+<body>
+
+<sql:setDataSource var= "db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://Localhost:3306/royalnavghan" user="root" password= "admin"/>
+<sql:query var="rs" dataSource= "${db}"> select * from Students</sql:query>
+
+
+<c:forEach items="${rs. rows}" var= "gadget"> 
+<br ><c:out value= "${gadget.gid}" ></c:out> : <c:out value= "S{gadget .gname}" ></c:out> : <c:out value= "${gadget.price}" ></c:out>
+ </c:forEach>
+
+
+</body>
+</html>

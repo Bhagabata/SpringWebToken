@@ -1,0 +1,7 @@
+package com.EmployeeRegister;
+
+public class EmployeeDetails {
+public String Name;
+public double salary;
+public String Designation;
+}

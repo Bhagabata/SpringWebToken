@@ -1,0 +1,7 @@
+package com.example.demoSpringBoot.JPA;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface Passport_JPA extends JpaRepository<T, ID> {
+
+}

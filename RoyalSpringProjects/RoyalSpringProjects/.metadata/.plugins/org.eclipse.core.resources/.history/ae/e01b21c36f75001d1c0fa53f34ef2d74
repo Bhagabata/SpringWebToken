@@ -1,0 +1,10 @@
+package com.example.demoSpringBoot.bean;
+
+public class Tutorial {
+	int Id;
+
+String Title;
+	Description
+	Published.
+
+}

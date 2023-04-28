@@ -1,0 +1,27 @@
+package validation;
+
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import jakarta.validation.Valid;
+
+public class ValidController {
+	@RequestMapping( {"/getdata"} )
+	public String getData(Model m) {
+		m.addAttribute("cust", new Validation());
+		return "/customersales/customerSalesForm.jsp";
+	}
+	
+	@RequestMapping( {"/validate"} )
+	public String validateCust(@Valid @ModelAttribute("cust") Validation c, BindingResult br) {
+		if(br.hasErrors()) {
+			return "/customersales/customerSalesForm.jsp"; 
+		} else {
+			return "/customersales/home.jsp";			
+		}
+
+	}
+}

@@ -1,0 +1,12 @@
+create database srihari;
+use srihari;
+show databases;
+create table product(product_name varchar(20),product_value int,product_status varchar(20));
+insert into product values("banana",20,"good"),("mango",30,"good"),("orange",40,"good"),("apple",120,"good"),("guave",20,"good"),("pomagranate",20,"good");
+select *from product;
+select round(avg (product_value)) from product;
+alter table product rename column product_value to value;
+delete from product  where product_name="guave";
+insert into product (product_name,value,product_status) values("carrot",25,"good");
+select* from product order by value ; 
+select*from product order by product_name desc;

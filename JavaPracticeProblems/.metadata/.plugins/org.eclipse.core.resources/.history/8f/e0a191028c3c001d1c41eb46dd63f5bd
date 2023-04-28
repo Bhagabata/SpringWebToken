@@ -1,0 +1,13 @@
+package day5;
+
+public class Final {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  final int age;
+  age=20;
+  
+  System.out.println(age);
+	}
+
+}

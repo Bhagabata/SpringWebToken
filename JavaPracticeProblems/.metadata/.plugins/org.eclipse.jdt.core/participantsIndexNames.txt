@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\Asus\Desktop\Practice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1371789428.index
+\JSTL\src\main\java
+C:\Users\Asus\Desktop\Practice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3294453492.index
+\newweb\src\main\java
+C:\Users\Asus\Desktop\Practice\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3724829065.index
+\SriJSTL\src\main\java

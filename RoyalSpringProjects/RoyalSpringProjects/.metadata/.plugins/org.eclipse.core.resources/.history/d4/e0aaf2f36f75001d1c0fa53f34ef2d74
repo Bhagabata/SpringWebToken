@@ -1,0 +1,14 @@
+package com.example.demoSpringBoot.bean;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Tutorials")
+public class Tutorial {
+	int Id;
+	String Title;
+	String Description;
+	String Published;
+
+}

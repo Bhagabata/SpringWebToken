@@ -1,0 +1,39 @@
+package com.royalnavghan.royalCustom;
+
+import com.royalnavghan.royalArtifacts.StudentDetails;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class CustomerDAOimpl implements CustomerDAO {
+
+	@Override
+	public void addCustomer(Customer customer) {
+		Configuration con=new Configuration()
+				.configure()
+				.addAnnotatedClass(Customer.class);
+		SessionFactory sr=con.buildSessionFactory();
+		Session session=sr.openSession();
+		
+	}
+
+	@Override
+	public void fetchCustomer(int customerId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateCustomer(int customerId, String newLocation) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteCustomer(Integer customerId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

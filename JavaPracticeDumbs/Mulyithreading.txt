@@ -1,0 +1,49 @@
+Multithreading
+
+before we known concurrency system can do more than at a time is called concurrency.
+Software that can do such things is known as concurrent software.
+java platform is designed from the ground to support concurrent programming. 
+java having included high level concurrent apis. That Apis in the java.util.concurrent packages.
+
+two things process and thread is most important for concurrent. 
+processes and threads=>multitasking=> Multiprocessing (egOS)=>,JVM=> Multithreading:
+
+multiprocessing is doing many tasks at a time using different process.
+
+Single threading is doing sigle tasks ata time.
+Thead => task=> Job(developer says)
+multithreading is doing many tasks at same time inside a single process. example video games, webserver like google meet etc...
+
+
+
+
+multithread => Lightweighted, It is a subset of multiprocessing.
+multithread execution is an essential feature of the java platforms. Every application has atleast one thread. or several. Developer POV we are start with one thread called main thread. This thread has the ability to create a addtional threads as well.
+Each thread is associated with an instance of the class thread. it is in java.lang.Thread.
+
+
+how can i achieve multithread
+1) By extending thread class
+2) By implementing runnable Interface.
+
+Thread class => main two methods 
+1)public void run()// it is the overridden in child class. and it is used to execute sequential execution.
+public void start()// you are starting a new thread so after that its parallel Execution.
+2)public void stop()
+3) getstate()// to know the state of the threads
+
+void run():
+
+
+thread life cycle 
+   
+
+
+Thread => java programming language concurrent programming is mostly concerned with threads.
+it is sometimes called lightweighting processes. both process and threads provides an execution environment. But creating a new threads requires fewer than creating a new process. 
+
+Process => it is a self containing working environment or execution environment. it is a private set of basic run time resources. each process has it own memory space.
+process are often seen as sysnonyms with programs or applications.
+
+
+

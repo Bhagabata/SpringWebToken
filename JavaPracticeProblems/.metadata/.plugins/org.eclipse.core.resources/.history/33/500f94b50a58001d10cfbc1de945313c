@@ -1,0 +1,64 @@
+package com.royalnavghan.royalCustom;
+
+
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class CustomerDAOimpl implements CustomerDAO {
+
+	@Override
+	public void addCustomer(Customer customer) {
+		try{Configuration con=new Configuration()
+				.configure()
+				.addAnnotatedClass(Customer.class);
+		SessionFactory sr=con.buildSessionFactory();
+		Session session=sr.openSession();
+		session.beginTransaction();
+		Integer id =(Integer)session.save(customer);
+		System.out.println("Customer is created  with Id::"+id);
+		session.getTransaction().commit();
+	} catch (HibernateException e) {
+		e.printStackTrace();
+	}
+		
+	}
+
+	@Override
+	public void fetchCustomer(int customerId) {
+   Customer customer=null;
+   try (Session session = CustomerDAOimpl.getSessionFactory().openSession()) {
+
+		 customer = session.get(Customer.class,customerId );
+		if(customer != null){
+			
+		}else{
+			System.out.println("Customer doesn't exist with provideded Id..");
+		}
+	} catch (HibernateException e) {
+		e.printStackTrace();
+	}
+	return;
+	   
+   }
+		
+	
+
+	@Override
+	public void updateCustomer(int customerId, String newLocation) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteCustomer(Integer customerId) {
+		// TODO Auto-generated method stub
+		
+	}  //private static StandardServiceRegistry standardServiceRegistry;
+	  private static SessionFactory sessionFactory;
+	 public static SessionFactory getSessionFactory() {
+		  return sessionFactory;
+	  }
+}

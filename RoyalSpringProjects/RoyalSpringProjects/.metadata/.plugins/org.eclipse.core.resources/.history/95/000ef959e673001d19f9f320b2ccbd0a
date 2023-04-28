@@ -1,0 +1,12 @@
+package com.example.demoSpringBoot;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class home {
+	@RequestMapping("home")
+public void home() {
+	System.out.println("hi hello from spring boot ");
+}
+}

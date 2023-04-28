@@ -1,0 +1,48 @@
+package com.royalnavghan.royalCustom;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.DynamicUpdate;
+@Entity
+@DynamicUpdate
+@Table(name="Customer_Details")
+public class Customer {
+	
+@Id	
+@Column(name="Customer_ID")
+@GeneratedValue(strategy = GenerationType.AUTO)
+Integer customer_id;
+@Column(name="Customer_Name")
+String customer_name;
+@Column(name="Location")
+String Customer_loc;
+public Integer getCustomer_id() {
+	return customer_id;
+}
+public void setCustomer_id(Integer customer_id) {
+	this.customer_id = customer_id;
+}
+public String getCustomer_name() {
+	return customer_name;
+}
+public void setCustomer_name(String customer_name) {
+	this.customer_name = customer_name;
+}
+public String getCustomer_loc() {
+	return Customer_loc;
+}
+public void setCustomer_loc(String customer_loc) {
+	Customer_loc = customer_loc;
+}
+@Override
+public String toString() {
+	return "Customer [customer_id=" + customer_id + ", customer_name=" + customer_name + ", Customer_loc="
+			+ Customer_loc + "]";
+}
+
+}

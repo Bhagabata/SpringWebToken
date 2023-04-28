@@ -1,0 +1,41 @@
+Stream API
+
+it is introduced in java 8
+it is used for collections framework support
+It is majorly used to iterate internally while collections iterate externally.
+it is parallel processing
+better performance 
+readable code
+Operators.
+source-> collection of the any object
+intermediate->Filter and map(Lambda Expression)
+Terminal->Its final execution.
+
+filter(Predicate)->Predicate is the filter. it is the method of stream class. predicate is a argument of filter.
+
+map(Function)-> To get a specific element in a object . eg get a movie name from movielist. And also change datatype also.
+stream.map(Movie::getName)
+filter and map demo
+
+(Question)given list of movies, find the movies released in 2021:
+
+//create a arrayList and add movie list. and also create a another class called movie and use instance variable name,year,actor, and create constructor and initialize values and create get set methods for that.
+arraylist name.stream(); or Stream<Movie>movieStream=Arraylist name.stream();
+use filter to filter the movies
+Stream<Movie>filterStream=movieStream.filter(any var-name m->m.getReleaseYear()==2021);
+Stream<String>mapStream=filterStream.map(m->movie.getName());
+mapStream.foreach(sysout::println);//
+
+Stream API using pipeline methods
+create a arrayList and add movie list. and also create a another class called movie and use instance variable name,year,actor, and create constructor and initialize values and create get set methods for that.
+
+arraylist name.stream()//source
+ .filtere(m->m.getReleaseYear()==2021)//intermediate
+ .map(Movie::getname)//intermediate
+ .foreach(sysout::println);//terminal
+
+
+collect framework 
+it is a terminal operator. it is mostly used as terminal operator. collect is a interface. we should implements collectors class.
+
+get list of movies names and add it to list

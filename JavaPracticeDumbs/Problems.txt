@@ -1,0 +1,41 @@
+1)Create an interface called StudentInterface. This interface has the abstract method 
+public void study(String subject).The Student class implements this interface, and provides an implementation for study() which displays that the student is studying a certain subject.
+
+
+2) Create a interface named 'Rectangle' with abstract method called rectangleLB and two data members 'length' and 'breadth' and two methods to print the area using subclass. Then create a another interface named ‘Square’ with abstract methods called radius. And data member called Area and method to print the area using subclass. Print the area of rectangle and square using object.
+
+3) Create a class for Waterbender, Earthbender, Firebender, and Airbender as subclasses of the superclass Avatar. The subclasses provide their actual implementation, Firebender must return a String containing the phrase "Fire attack!”, Waterbender = “Water attack!”, Airbender = "Air attack!”, and Earthbender = "Stone attack!". Create a testdriver called TestAvatar to demonstrate the classes. Apply the concept of Inheritance and Polymorphism.
+
+
+
+Sample Output:
+
+
+
+Fire attack!
+
+
+
+Water attack!
+
+
+
+Air attack!
+
+
+
+Stone attack!
+
+
+
+Default attack!
+
+
+
+4) Create three sub classes namely: programmer, admin and librarian to store bonus,
+overtime and total salary for each employee. Each of the constructor in should inherit the properties of Employee(using the superkeyword) and implement the EmployeeSalary interface. Hide the properties from the parent class Employee using encapsulation principle.Use getters and setters to make the properties in Employee visible and accessible to other.
+
+
+5) Create a class named Invoice containing fields for an item number, name, quantity, price, and total cost. Create a constructor to pass the value of the item name, quantity, and price. Also include displayLine() method that calculates the total cost for the item (As price times quantity) then displays the item number, name, quantity price, and total cost.
+
+6)Create a class called Register with three instance variables: username, email, and password. These three pieces of information are all String. Your class should have a constructor that initializes the three instance variables and assumes that the provided values are correct. For each instance variable, provide a set and a get method. Create a displayInformation method in order to display the username, email, and password.By calling getMethods.

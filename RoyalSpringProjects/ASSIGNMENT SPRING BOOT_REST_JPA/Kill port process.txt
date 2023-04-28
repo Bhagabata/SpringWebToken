@@ -1,0 +1,17 @@
+netstat  -ano  |  findstr  8080
+
+
+taskkill  /F  /PID
+
+
+
+
+alter user 'admin'@'localhost' identified by 'admin';
+
+
+
+GRANT ALL PRIVILEGES ON royalnavghan.* TO 'admin'@'localhost';
+
+
+
+create user 'admin'@'localhost' identified by 'admin';

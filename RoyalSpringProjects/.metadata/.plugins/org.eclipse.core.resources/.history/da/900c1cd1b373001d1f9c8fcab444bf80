@@ -1,0 +1,26 @@
+package com.EmployeeRegister;
+
+public class EmployeeDetails {
+public String Name;
+public double salary;
+public String Designation;
+public String getName() {
+	return Name;
+}
+public void setName(String name) {
+	Name = name;
+}
+public double getSalary() {
+	return salary;
+}
+public void setSalary(double salary) {
+	this.salary = salary;
+}
+public String getDesignation() {
+	return Designation;
+}
+public void setDesignation(String designation) {
+	Designation = designation;
+}
+
+}

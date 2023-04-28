@@ -1,0 +1,5 @@
+package springMvcConfig;
+
+public class ViewResolver {
+
+}

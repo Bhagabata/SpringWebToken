@@ -1,0 +1,19 @@
+package day5;
+interface printable{
+	void print();
+	
+class A6 implements printable{
+	public void print()
+	{System.out.println("Hello");} 
+}
+		
+	
+}
+public class Interface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

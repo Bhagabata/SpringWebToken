@@ -1,0 +1,43 @@
+package com.royalnavghan.royalArtifacts;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+@Entity//(name="Student")     //to change the table name
+//@Table(name="Students")     // to change the table name
+public class StudentDetails {   //POJO
+@Id
+private int studentId;
+//@Transient    // it is used to hide one column of table
+private String StudentName;
+//@Column(name="depts")  //to change column name
+private String Department;
+
+public int getStudentId() {
+	return studentId;
+}
+public void setStudentId(int studentId) {
+	this.studentId = studentId;
+}
+public String getStudentName() {
+	return StudentName;
+}
+public void setStudentName(String studentName) {
+	StudentName = studentName;
+}
+public String getDepartment() {
+	return Department;
+}
+public void setDepartment(String department) {
+	Department = department;
+}
+@Override
+public String toString() {
+	return "StudentDetails [studentId=" + studentId + ", StudentName=" + StudentName + ", Department=" + Department
+			+ "]";
+}
+
+}
